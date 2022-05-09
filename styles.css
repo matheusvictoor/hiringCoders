@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+ul {
+    list-style: none;
+    font-size: 15px;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+body {
+    background: url(imagens/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;
+}
+
+header ul li a {
+    transition: 300ms;
+    color: aliceblue ;
+    ;
+}
+
+header ul li a:hover {
+    color: rgb(43, 226, 119) ;
+}
+
+#logo {
+    image-rendering: auto;
+}
+
+.container {
+    text-align: center;
+    color: aliceblue ;
+    padding: 20px;
+}
+
+.container .nome h1 {
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.container .nome h5 {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+#arrow {
+    font-size: 20px;
+    cursor: pointer;
+    /*animation: piscando 1s steps(5, start) infinite;*/
+}
+
+/*@keyframes piscando {
+    to {
+        visibility: hidden;
+    }
+}*/
+
+.rotation {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}   
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.form input {
+    width: 50%;
+    padding: 4px 4px;
+    background-color: aliceblue;
+    color: blueviolet;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    padding: 4px 4px;
+    background: linear-gradient(to right,rgb(43, 226, 119) 50%, blueviolet 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: aliceblue;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -10px;
+    margin-top: 15px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+    color: blueviolet;
+}
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }  
+}
+
+@media only screen and (max-width: 480px){
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+}
